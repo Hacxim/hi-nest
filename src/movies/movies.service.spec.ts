@@ -33,6 +33,7 @@ describe('MoviesService', () => {
       });
       const movie = service.getOne(1);
       expect(movie).toBeDefined();
+      expect(movie.id).toEqual(1);
     });
 
     it('should throw 404 error', () => {
